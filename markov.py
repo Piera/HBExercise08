@@ -34,21 +34,19 @@ def make_text(chains):
         output = [k[0],  k[1],  value] # "word_oneword_twoword_three"
         print str.join(" ", output)
         k = (output[-2], output[-1])
-        return k
+    return k
  
-def main():
+def main(filename):
     args = sys.argv
-    argv = script, filename
+    script, filename = args
 
     # Change this to read input_text from a file
-    #input_text = "Some text"
     f = open(filename)
     words = f.read()
-    return words
 
-    make_chains(words)
-    make_text(chains)
-    print k
+    chain_dict = make_chains(words)
+    random_text = make_text(chain_dict)
+    print random_text
 
 if __name__ == "__main__":
-    main()
+    main("twain_two.txt")
