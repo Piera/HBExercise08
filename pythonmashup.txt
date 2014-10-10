@@ -1,0 +1,155 @@
+A hungry python tastes the air with its tongue to smell if prey is nearby. Special temperature-sensing pits on its face tells the snake if a warm-blooded animal is nearby. When its prey is close enough, the python grabs it with its teeth, then quickly wraps its body around the victim and squeezes. The snake doesn't actually crush the prey and break its bones, though. Instead, it squeezes tightly so that the prey animal can’t breath and it suffocates. Then the python unhinges its jaws so it can open its mouth wide enough to swallow the food whole.
+ 
+Some people think that pythons launch themselves out of trees onto unsuspecting animals below, but that's not a good move. Diving out of a tree like that could cause serious injury to the snake, especially a big one. In fact, most big pythons stay on the ground for that very reason. Swimming is another story! Many pythons are excellent swimmers and spend a lot of time in the water. One of their ambush techniques for catching food is to lie submerged in a stream or slow-moving river with only their heads above the surface, waiting for a bird or small mammal to come to the water’s edge.
+ 
+Some types of female pythons lay eggs in a shallow nest or even cover them with leaves and soil. But almost all python mothers stay coiled around their eggs to protect them while they develop. If the temperature gets too cold, the mothers of larger kinds of pythons warm up the eggs by "shivering." Moving their muscles like this creates a little extra heat for their offspring.
+
+Python snakes are generalist regarding habitats. They thrive in both wet and dry environments. Some pythons are capable of both swimming and climbing in trees which increases the number of available prey to suffocate. The diversified nature of python snakes is what makes pythons such a versatile species.
+
+Adult pythons have a limited number of natural enemies because of their size, and their defensive abilities. However, smaller pythons have many enemies including lizards, crocodiles, large birds, and other large predatory animals.
+
+Preferred diet
+Large pythons need large animals to satisfy their energy requirements. When the prey has been asphyxiated it is swallowed in full. It takes the python from one to several days to digest a prey, and pythons are generalist regarding prey choice.
+
+Even though most pythons have fairly large teeth, they only use them to hold the prey and to swallow. Python teeth angle backward to keep hold on prey during constriction. Naturally, most prey are swallowed head first as this reduce resistance.
+
+In Florida a population of Burmese Pythons in the Everglades National Park has become a nuisance according to newspapers. According to reports, the ecosystem of Everglades National Park is greatly damaged by the invasion of pythons that have no natural enemies in Florida. The main concern is that the Burmese Python is eradicating populations of endangered animals.
+
+Nobody is quite sure about the size of the python population in Florida, but the highest estimates are in the range of 100000 to 150000. The last reported number with some credibility was 3000.
+
+The population of pythons has grown because of two reasons:
+
+First the hurricane Andrew destroyed some reptile breeding facilities near the Everglades National Park in 1992. About 800 baby pythons were literally blown into the park area. It takes Burmese pythons 5-6 years to mature, and the pythons in Everglades in 2011 is third generation.
+
+The logic combinations you learned from the last exercise are called "boolean" logic expressions. Boolean logic is used everywhere in programming. It is an essential fundamental parts of computation and knowing them very well is akin to knowing your scales in music.
+
+In this exercise you will take the logic exercises you memorized and start trying them out in Python. Take each of these logic problems and write what you think the answer will be. In each case it will be either True or False. Once you have the answers written down, you will start Python in your Terminal and type each logic problem in to confirm your answers.
+
+There are a lot of operators in Python similar to != and ==. Try to find as many "equality operators" as you can. They should be like < or <=.
+Write out the names of each of these equality operators. For example, I call != "not equal."
+Play with the Python by typing out new boolean operators, and before you press Enter try to shout out what it is. Do not think about it. Shout the first thing that comes to mind. Write it down, then press Enter, and keep track of how many you get right and wrong.
+Throw away the piece of paper from 3 away so you do not accidentally try to use it later.
+
+You should have spent the last week getting your list of symbols straight and locked in your mind. Now you get to apply this to another week of reading code on the internet. This exercise will be daunting at first. I'm going to throw you in the deep end for a few days and have you just try your best to read and understand some source code from real projects. The goal isn't to get you to understand code, but to teach you the following three skills:
+
+Finding Python source code for things you need.
+Reading through the code and looking for files.
+Trying to understand code you find.
+At your level you really do not have the skills to evaluate the things you find, but you can benefit from getting exposure and seeing how things look.
+
+When you do this exercise, think of yourself as an anthropologist, trucking through a new land with just barely enough of the local language to get around and survive. Except, of course, that you will actually get out alive because the internet isn't a jungle.
+
+That's it. Your job is to use what you know so far and see if you can read the code and get a grasp of what it does. Try skimming the code first, and then read it in detail. Try taking very difficult parts and read each symbol you know out loud.
+
+Now try some of these other sites:
+
+If you did it right then you should see the same output as I in the What You Should See section of this exercise. If not, you have done something wrong. No, the computer is not wrong. It's important that you can read these errors messages because you will be making many of these mistakes. Even I make many of these mistakes. Let's look at this line by line.
+
+This means get the current value of x, add one, and then update x with the new value. The new value of x is the old value of x plus 1. Although this assignment statement may look a bit strange, remember that executing assignment is a two-step process. First, evaluate the right-hand side expression. Second, let the variable name on the left-hand side refer to this new resulting object. The fact that x appears on both sides does not matter. The semantics of the assignment statement makes sure that there is no confusion as to the result.
+
+If you try to update a variable that doesn’t exist, you get an error because Python evaluates the expression on the right side of the assignment operator before it assigns the resulting value to the name on the left. Before you can update a variable, you have to initialize it, usually with a simple assignment. In the above example, x was initialized to 6.
+
+Updating a variable by adding 1 is called an increment; subtracting 1 is called a decrement. Sometimes programmers also talk about bumping a variable, which means the same as incrementing it by 1.
+
+Recall from our discussion of modules that there were a number of things that turtles can do. Here are a couple more tricks (remember that they are all described in the module documentation).
+
+We can get a turtle to display text on the canvas at the turtle’s current position. The method is called write. For example, alex.write("Hello") would write the string hello at the current position.
+One can fill a shape (circle, semicircle, triangle, etc.) with a fill color. It is a two-step process. First you call the method begin_fill, for example alex.begin_fill(). Then you draw the shape. Finally, you call end_fill ( alex.end_fill()).
+We’ve previously set the color of our turtle - we can now also set it’s fill color, which need not be the same as the turtle and the pen color. To do this, we use a method called fillcolor, for example, alex.fillcolor("red").
+Ok, so can we get tess to draw a bar chart? Let us start with some data to be charted,
+
+xs = [48, 117, 200, 240, 160, 260, 220]
+
+Corresponding to each data measurement, we’ll draw a simple rectangle of that height, with a fixed width. Here is a simplified version of what we would like to create.
+
+Turtles have been on the earth for more than 200 million years. They evolved before mammals, birds, crocodiles, snakes, and even lizards.
+The earliest turtles had teeth and could not retract their heads, but other than this, modern turtles are very similar to their original ancestors.
+
+Several species of turtles can live to be over a hundred years of age including the American Box Turtle.
+One documented case of longevity involves an adult Indian Ocean Giant Tortoise that, when captured as an adult, was estimated to be fifty years old. It then lived another 152 years in captivity.
+
+While most turtles do not tolerate the cold well, the Blanding's turtle has been observed swimming under the ice in the Great Lakes region.
+Turtles range in size from the 4-inch Bog Turtle to the 1500-pound Leathery Turtle.
+North America contains a large variety of turtle species, but Europe contains only two species of turtle and three species of tortoise.
+The top domed part of a turtle's shell is called the carapace, and the bottom underlying part is called the plastron.
+
+Guard: Who goes there?
+King Arthur: It is I, Arthur, son of Uther Pendragon, from the castle of Camelot. King of the Britons, defeater of the Saxons, Sovereign of all England!
+Guard: Pull the other one!
+King Arthur: I am, and this is my trusty servant Patsy. We have ridden the length and breadth of the land in search of knights who will join me in my court at Camelot. I must speak with your lord and master.
+Guard: What? Ridden on a horse?
+King Arthur: Yes!
+Guard: You're using coconuts!
+King Arthur: What?
+Guard: You've got two empty halves of coconut and you're bangin' 'em together.
+King Arthur: So? We have ridden since the snows of winter covered this land, through the kingdom of Mercia, through...
+Guard: Where'd you get the coconuts?
+King Arthur: We found them.
+Guard: Found them? In Mercia?! The coconut's tropical!
+King Arthur: What do you mean?
+Guard: Well, this is a temperate zone.
+King Arthur: The swallow may fly south with the sun or the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land?
+Guard: Are you suggesting that coconuts migrate?
+King Arthur: Not at all. They could be carried.
+1st soldier with a keen interest in birds: What? A swallow carrying a coconut?
+King Arthur: It could grip it by the husk!
+Guard: It's not a question of where he grips it! It's a simple question of weight ratios! A five ounce bird could not carry a one pound coconut.
+King Arthur: Well, it doesn't matter. Will you go and tell your master that Arthur from the Court of Camelot is here?
+Guard: Listen. In order to maintain air-speed velocity, a swallow needs to beat its wings forty-three times every second, right?
+King Arthur: Please!
+Guard: Am I right?
+Large Man: Here's one.
+Dead Collector: Nine pence.
+"Dead" Man: I'm not dead.
+Dead Collector: What?
+Large Man: Nothing. [hands the collector his money] There's your nine pence.
+"Dead" Man: I'm not dead!
+Dead Collector: 'Ere, he says he's not dead.
+Large Man: Yes he is.
+"Dead" Man: I'm not.
+Dead Collector: He isn't.
+Large Man: Well, he will be soon, he's very ill.
+"Dead" Man: I'm getting better.
+Large Man: No you're not, you'll be stone dead in a moment.
+Dead Collector: Well, I can't take him like that. It's against regulations.
+"Dead" Man: I don't want to go on the cart.
+Large Man:' Oh, don't be such a baby.
+Dead Collector: I can't take him.
+"Dead" Man: I feel fine.
+Large Man with Dead Body: Oh, do me a favor.
+Dead Collector: I can't.
+Large Man: Well, can you hang around for a couple of minutes? He won't be long.
+Dead Collector: I promised I'd be at the Robinsons'. They've lost nine today.
+Large Man: Well, when's your next round?
+Dead Collector: Thursday.
+"Dead" Man: I think I'll go for a walk.
+Large Man: You're not fooling anyone, you know. Isn't there anything you could do?
+"Dead" Man: I feel happy. I feel happy.
+Bedevere: How do you know she is a witch?
+Peasant: She looks like one.
+[Crowd indistinctly shouts]
+Bedevere: Bring her forward!
+Girl: I'm not a witch.
+Bedevere: But you are dressed as one...
+Girl: They dressed me up like this. [Crowd murmurs]
+Girl: And this isn't my nose. This is a false one.
+Bedevere: [inspects the nose and confirms] Well?
+Peasant: Well, we did do the nose.
+Bedevere: The nose?
+Peasant: And the hat. She's a witch!
+Peasant Crowd: Burn her!
+Bedevere: Did you dress her up like this?
+Peasant Crowd: No, no, no! [beat] Yes, yes. A bit. But she's got a wart.
+Bedevere: What makes you think she is a witch?
+Peasant: Oh, she turned me into a newt!
+[Bedevere gives him a disbelieving look]
+Bedevere: A newt?
+[Silence]
+Peasant: Well, I got better.
+Peasant Crowd: Burn her anyway!
+Frenchman: You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits! [makes taunting gestures at them]
+Sir Galahad: What a strange person.
+King Arthur: Now, look here, my good man--
+Frenchman: I don't want to talk to you no more, you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries!
+Sir Galahad: Is there someone else up there we can talk to?
+Frenchman: No, now go away or I shall taunt you a second time!
