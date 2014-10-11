@@ -2,6 +2,19 @@
 
 import sys
 import random
+# from key.txt import ConsumerKeyAPIKey, ConsumerSecretAPISecret, AccessToken, AccessTokenSecret
+import twitter
+
+ConsumerKeyAPIKey = '27UK15mUaqcXUjPwwOFxWaI8n'
+ConsumerSecretAPISecret = 'c2hW1dvNsJz9BQHG1Vkfb9Xz3it0xgknMQxsuVHMB7RY4e2AeU'
+AccessToken = '2851249448-J0oLZwf8tsMZBuiuksYeUg5gTxj1iO3RpmuF0xl'
+AccessTokenSecret = 'Plbm2k4jji2PrWCuhjNiaCCNkFk3LxJePoQIElituaoB5'
+
+api = twitter.Api(consumer_key=ConsumerKeyAPIKey,
+                  consumer_secret=ConsumerSecretAPISecret,
+                  access_token_key=AccessToken,
+                  access_token_secret=AccessTokenSecret)
+
 
 
 def make_chains(words,x):
@@ -36,7 +49,7 @@ def make_text(chains,x):
     keys = chains.keys()  # [("word_one", "word_two")]
     k = random.choice(keys) # ("word_one", "word_two")
     output = list(k)
-    while k in chains and len(" ".join(output)) < 140:
+    while k in chains and len(" ".join(output)) < 135:
         p_values = chains[k]
         value = random.choice(p_values) # "word_three"
         output.append(value)
@@ -46,18 +59,18 @@ def make_text(chains,x):
         k = tuple(output[-x:])
     return output
  
-def make_tweet(random_text):
-    while len(random_text) > 1005:
-        random_text.pop()
+# def make_tweet(random_text):
+#     while len(random_text) > 1005:
+#         random_text.pop()
 
-    shorter_text = random_text
-    # print type(shorter_text)
+#     shorter_text = random_text
+#     # print type(shorter_text)
 
-    # for words in random_text:
-    #     if not "." in words: 
-    #         continue
+#     # for words in random_text:
+#     #     if not "." in words: 
+#     #         continue
 
-    return shorter_text
+#     return shorter_text
 
 def main(filename):
     args = sys.argv
@@ -73,9 +86,10 @@ def main(filename):
     chain_dict = make_chains(words,x)
     # print chain_dict
     random_text = make_text(chain_dict, x)
-    tweet_text = make_tweet(random_text)
+    # tweet_text = make_tweet(random_text)
     # print type(random_text)
-    print " ".join(tweet_text)
+    print " ".join(random_text)
+    api.PostUpdate(" ".join(random_text))
 
 if __name__ == "__main__":
     main("pythonmashup.txt")
